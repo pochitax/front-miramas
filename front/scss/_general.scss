@@ -1,4 +1,22 @@
-// General
+// General Styles
+
+.h3, h3 {
+    font-size: 22px;
+}
+.h4, h4 {
+    font-size: 18px;
+}
+
+/* Equal height */
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// General Content
 
 #wrapper #content-wrapper {
     background-color: $white;
@@ -13,5 +31,30 @@
 .header-logo {
     img {
         width: 220px;
+    }
+}
+
+// Footer
+
+.footer {
+    a {
+        color: $white;
+    }
+    .logo-footer {
+        width: 155px;
+        height: 36px;
+        display: block;
+    }
+    p, .h5, h5, .nav-link {
+        font-size: 13px;
+    }
+    .font-italic {
+        font-family: $font-family-sans-serif;
+    }
+    .nav-link {
+        color: $white;
+        &:hover {
+            color: $primary;
+        }
     }
 }
