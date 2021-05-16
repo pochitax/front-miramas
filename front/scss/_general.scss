@@ -9,6 +9,13 @@
 .text-black {
     color: $black;
 }
+.btn {
+    &.btn-primary {
+        color: $black;
+        border-radius: 0;
+        border: 1px solid $black;
+    }
+}
 
 /* Equal height */
 
