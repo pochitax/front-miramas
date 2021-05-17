@@ -226,27 +226,29 @@
                 <div class="container">
                     <div class="row my-5 py-5">
                         <div class="col-lg-6">
-                            <h1 class="text-uppercase">Bienvenidos a Mira+</h1>
+                            <h1 class="text-uppercase text-black">Bienvenidos a Mira+</h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ipsam mollitia provident itaque nam praesentium sed ex vel deleniti cumque sapiente, facilis minima nobis fuga modi corporis! Deserunt, minus labore.</p>
                         </div>
                         <div class="col-lg-6">
-                            <form class="user">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" name="username" id="inputUserName" aria-describedby="emailHelp" placeholder="Mi nombre de usuario es...">
+                            <form class="user bg-primary p-5">
+                                <div class="form-group mb-4">
+                                    <label class="text-black mb-1" for="inputUserName">Nombre de usuario</label>
+                                    <input type="text" class="form-control form-control-user border-0" name="username" id="inputUserName" aria-describedby="emailHelp" placeholder="Mi nombre de usuario es...">
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" name="password" id="inputPassword" placeholder="******">
+                                <div class="form-group mb-4">
+                                    <label class="text-black mb-1" for="inputPassword">Contraseña</label>
+                                    <input type="password" class="form-control form-control-user border-0" name="password" id="inputPassword" placeholder="******">
                                 </div>
-                                <div class="form-group d-flex justify-content-between">
-                                    <div class="custom-control custom-checkbox small">
+                                <div class="form-group mb-4 d-flex justify-content-between">
+                                    <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck">
-                                        <label class="custom-control-label" for="customCheck">Recuérdame</label>
+                                        <label class="custom-control-label text-black" for="customCheck">Recuérdame</label>
                                     </div>
-                                    <div class="custom-control custom-checkbox small">
-                                        <a class="btn btn-link btn-sm text-black">Olvidé mi contraseña</a>
+                                    <div class="custom-control custom-checkbox">
+                                        <a class="btn btn-link p-0 text-black">Olvidé mi contraseña</a>
                                     </div>
                                 </div>
-                                <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                <a href="index.html" class="btn btn-primary btn-lg btn-user btn-block text-uppercase py-3">
                                     Ingresar
                                 </a>                                
                             </form>
