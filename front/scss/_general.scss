@@ -87,12 +87,26 @@ p {
     border-top-right-radius: 5px;
     padding: 5px;
     margin-bottom: .5rem;
+    position: relative;
 }
 .semestre-aprobado {
     background-color: $green;
 }
 .semestre-en-curso {
     background-color: $yellow;
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: $yellow;
+        bottom: -3px;
+        transform: rotate(45deg);
+    }
 }
 .semestre-disponible-inscripcion {
     background-color: #999;
@@ -185,9 +199,6 @@ p {
 }
 .asignatura-aprobada, .asignatura-en-curso {
     background-color: #eee;
-}
-.asignatura-disponible, .asignatura-en-curso, .asignatura-aprobada {
-
 }
 
 // Responsive 
