@@ -72,6 +72,83 @@ p {
     }
 }
 
+// Clases especiales
+
+/* Encabezados Semestres */
+
+.semestre {
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin-bottom: .5rem;
+}
+.semestre-aprobado {
+    background-color: $green;
+}
+.semestre-en-curso {
+    background-color: $yellow;
+}
+.semestre-disponible-inscripcion {
+    background-color: #999;
+}
+
+/* Asignaturas */
+
+.asignatura {
+    padding: 5px;
+    font-size: 13px;
+    color: $black;
+    margin-bottom: .5rem;
+    .asignatura-titulo {
+        display: block;
+        margin-bottom: 20px;
+        width: 90%;
+        font-weight: 400;
+    }
+    .asignatura-codigo {
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    .asignatura-creditos {
+        font-size: 11px;
+    }
+}
+.asignatura-aprobada {
+    border-left: 4px solid $green;
+    .asignatura-creditos {
+        .fas {
+            color: $green;
+        }
+    }
+}
+.asignatura-en-curso {
+    border-left: 4px solid $yellow;
+    .asignatura-creditos {
+        .fas {
+            color: $yellow;
+        }
+    }
+}
+.asignatura-disponible {
+    background-color: #d9d9d9;
+    border-left: 4px solid #999;
+    .asignatura-creditos {
+        .fas {
+            color: #999;
+        }
+    }
+}
+.asignatura-aprobada, .asignatura-en-curso {
+    background-color: #eee;
+}
+.asignatura-disponible, .asignatura-en-curso, .asignatura-aprobada {
+
+}
+
 // Responsive 
 
 /* móvil */
