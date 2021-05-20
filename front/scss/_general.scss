@@ -246,11 +246,33 @@ p {
         .asignatura-fecha {
             background-color: $purple;
         }
+        .asignatura-codigo {
+            &::before {
+                color: $purple;
+            }
+        }
+        .asignatura-creditos {
+            &::before {
+                color: $purple;
+                font-weight: 900;
+            }
+        }
     }
     &.temporada-extraordinaria {
         border-left-color: $red;
         .asignatura-fecha {
             background-color: $red;
+        }
+        .asignatura-codigo {
+            &::before {
+                color: $red;
+            }
+        }
+        .asignatura-creditos {
+            &::before {
+                color: $red;
+                font-weight: 900;
+            }
         }
     }
     .asignatura-fecha {
