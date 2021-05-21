@@ -1,0 +1,396 @@
+// General Styles
+
+.h3, h3 {
+    font-size: 22px;
+}
+.h4, h4 {
+    font-size: 18px;
+}
+.text-black {
+    color: $black;
+}
+.btn {
+    &.btn-primary {
+        color: $black;
+        border-radius: 0;
+        border: 1px solid $black;
+    }
+}
+p {
+    font-family: $font-family-serif;
+    font-size: 15px;
+    color: $black;
+}
+/* Equal height */
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// General Content
+
+#wrapper #content-wrapper {
+    background-color: $white;
+    overflow: visible;
+}
+
+// Header & Logo
+
+.topbar {
+    height: 100px;
+}
+
+.header-logo {
+    img {
+        width: 220px;
+    }
+}
+
+// Footer
+
+.footer {
+    a {
+        color: $white;
+    }
+    .logo-footer {
+        width: 155px;
+        height: 36px;
+        display: block;
+    }
+    p, .h5, h5, .nav-link {
+        font-size: 13px;
+    }
+    .font-italic {
+        font-family: $font-family-sans-serif;
+    }
+    .nav-link {
+        color: $white;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+// Clases especiales
+
+/* Progreso */
+
+.datos-progreso {
+    font-size: 13px;
+    color: $black;
+    line-height: 130%;
+    padding: 5px;
+    border-left: 4px solid $black;
+    display: inline-table;
+    &.aprobado {
+        border-left-color: $green;
+    }
+    &.en-curso {
+        border-left-color: $yellow;
+    }
+    &.disponible {
+        border-left-color: #999;
+        &.seleccion {
+            border-left-color: $purple;
+        }
+    }
+    &.lista-datos {
+        border-left-color: transparent;
+        span {
+            display: block;
+            margin: 5px 0;
+            position: relative;
+            padding-left: 20px;
+            min-width: 130px;
+            .fas {
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+    &.temporada-extraordinaria {
+        border-left-color: $red;
+    }
+}
+
+/* Encabezados Semestres */
+
+.semestre {
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    margin-bottom: .5rem;
+    position: relative;
+}
+.semestre-aprobado {
+    background-color: $green;
+}
+.semestre-en-curso {
+    background-color: $yellow;
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: $yellow;
+        bottom: -3px;
+        transform: rotate(45deg);
+    }
+}
+.semestre-disponible-inscripcion {
+    background-color: #999;
+}
+.seleccion-semestre {
+    background-color: $purple;
+}
+
+/* Asignaturas */
+
+.asignatura {
+    padding: 5px 8px;
+    font-size: 13px;
+    color: $black;
+    margin-bottom: .5rem;
+    background-color: #eee;
+    border-left: 4px solid $black;
+    .asignatura-titulo {
+        display: block;
+        margin-bottom: 20px;
+        width: 90%;
+        font-weight: 400;
+        line-height: 130%;
+    }
+    .asignatura-codigo {
+        font-size: 11px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .asignatura-creditos {
+        font-size: 11px;
+        position: relative;
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f005"; //"\f005"
+            font-weight: 900;
+            font-size: 10px;
+            display: inline-block;
+            margin-right: 3px;
+        }
+    }
+    &.asignatura-clave {
+        .asignatura-codigo {
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f084"; 
+                font-weight: 900;
+                font-size: 10px;
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.asignatura-aprobada {
+    border-left: 4px solid $green;
+    .asignatura-creditos {
+        &::before {
+            color: $green;
+        }
+    }
+    .asignatura-codigo {
+        &::before {
+            color: $green;
+        }
+    }
+}
+.asignatura-en-curso {
+    border-left: 4px solid $yellow;
+    .asignatura-creditos {
+        &::before {
+            color: $yellow;
+        }
+    }
+    .asignatura-codigo {
+        &::before {
+            color: $yellow;
+        }
+    }
+}
+.asignatura-disponible {
+    background-color: #d9d9d9;
+    border-left: 4px solid #999;
+    position: relative;
+    z-index: 0;
+    .asignatura-creditos {
+        &::before {
+            color: #999;
+            font-weight: 400;
+        }
+    }
+    .asignatura-codigo {
+        &::before {
+            color: #999;
+        }
+    }
+    &.seleccionar-asignatura {
+        border-left-color: $purple;
+        .asignatura-fecha {
+            background-color: $purple;
+        }
+        .asignatura-codigo {
+            &::before {
+                color: $purple;
+            }
+        }
+        .asignatura-creditos {
+            &::before {
+                color: $purple;
+                font-weight: 900;
+            }
+        }
+    }
+    &.temporada-extraordinaria {
+        border-left-color: $red;
+        .asignatura-fecha {
+            background-color: $red;
+        }
+        .asignatura-codigo {
+            &::before {
+                color: $red;
+            }
+        }
+        .asignatura-creditos {
+            &::before {
+                color: $red;
+                font-weight: 900;
+            }
+        }
+    }
+    &.seleccionada {
+        &::before {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            font-family: "Font Awesome 5 Free";
+            content: "\f00c"; 
+            font-weight: 900;
+            color: $yellow;
+            width: 22px;
+            height: 22px;
+            background-color: $white;
+            border: 3px solid $yellow;
+            border-radius: 20px;
+            z-index: 1;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .asignatura-fecha {
+        display: block;
+        color: $white;
+        font-size: 12px;
+        padding: 3px 8px 0 8px;
+        margin: 5px -8px -5px -8px;
+        background-color: #999;
+    }
+}
+
+// Responsive 
+
+/* móvil */
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .header-logo img {
+        width: 230px; //150px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-logo img {
+        width: 175px; //150px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    h1, .h1 {
+        font-size: 2rem;
+    }
+    h2, .h2 {
+        font-size: 24px;
+    }
+    .h3, h3 {
+        font-size: 18px;
+    }
+    .h4, h4 {
+        font-size: 15px;
+    }
+    .display-4 {
+        font-size: 27px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .featured-top .font-italic {
+        font-size: 18px;
+    }
+    .featured-top .btn {
+        padding: 15px;
+    }
+    /* header */
+    .header-top {
+        height: 60px;
+        .row {
+            height: 60px;
+        }
+        .col-md-6 {
+            height: 60px;
+        }
+        .btn {
+            font-size: 14px;
+        }
+    }
+    .breadcrumb .breadcrumb-item {
+        font-size: 11px;
+    }
+    #carouselSlides {
+        margin-bottom: 0;
+    }
+    .card .card-text {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .call-to-action {
+        text-align: center;
+    }
+    .call-to-action .btn {
+        padding: 15px;
+    }
+    .call-to-action h3 {
+        font-size: 30px;
+    }
+    .call-to-action p {
+        font-size: 1rem;
+    }
+    .footer .logo-footer {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .footer img.acreditacion {
+        width: 100%;
+        max-width: 361px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid $white;
+    }
+}
