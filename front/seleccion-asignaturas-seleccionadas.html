@@ -237,7 +237,7 @@
             <div id="content">
                                 
                 <!-- Begin Page Content -->
-                <div class="container mb-5">
+                <div class="container mb-0">
                     <div class="row">
                         <!-- Page Heading -->
                         <div class="col-md-10 py-4">
@@ -247,500 +247,515 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-3">
-                                    <div class="asignatura">
-                                        <span class="asignatura-titulo">Nombre Asignatura</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">SIGLA</span>
-                                            <span class="asignatura-creditos">00</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-9 d-flex justify-content-between align-items-center">
-                                    <span class="datos-progreso aprobado mx-2">
-                                        Asignatura aprobada
-                                    </span>
-                                    <span class="datos-progreso en-curso mx-2">
-                                        Asignatura en curso
-                                    </span>
-                                    <span class="datos-progreso disponible seleccion mx-2">
-                                        Disponible para inscripción
-                                    </span>
-                                    <span class="datos-progreso temporada-extraordinaria mx-2">
-                                        Asignatura Temporada extraordinaria
-                                    </span>
-                                    <span class="datos-progreso lista-datos mx-2">
-                                        <span>
-                                            <i class="fas fa-key mr-2"></i> Asignatura Clave
-                                        </span>
-                                        <span>
-                                            <i class="fas fa-star mr-2"></i> Créditos
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>                            
-                        </div>
-                        <div class="col-md-4 d-sm-flex align-items-center justify-content-end">
-                            <a href="#" class="d-none d-sm-inline-block text-uppercase p-3 btn btn-primary">Seleccionar asignaturas</a>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- tabla asignaturas -->
-                <div class="container-fluid mb-5">
-
-                    <div class="row">
-                        <div class="col-12 text-center mb-2 px-1">
-                            <div class="bg-gray-400 text-black text-uppercase py-2">
-                                Semestres
+                <!-- Fixed -->
+                <div id="asignaturasSelector">
+                    <div class="pinBox bg-white">
+                        <div class="container-fluid mb-0 pt-2">
+                            <div class="row mb-2">
+                                <div class="col-md-9">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="asignatura">
+                                                <span class="asignatura-titulo lista-asignatura">Nombre Asignatura</span>
+                                                <span class="d-flex justify-content-between">
+                                                    <span class="asignatura-codigo">SIGLA</span>
+                                                    <span class="asignatura-creditos">00</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-9 d-flex justify-content-between align-items-center">
+                                            <span class="datos-progreso aprobado mx-2">
+                                                Asignatura aprobada
+                                            </span>
+                                            <span class="datos-progreso en-curso mx-2">
+                                                Asignatura en curso
+                                            </span>
+                                            <span class="datos-progreso disponible seleccion mx-2">
+                                                Disponible para inscripción
+                                            </span>
+                                            <span class="datos-progreso temporada-extraordinaria mx-2">
+                                                Asignatura Temporada extraordinaria
+                                            </span>
+                                            <span class="datos-progreso lista-datos mx-2">
+                                                <span>
+                                                    <i class="fas fa-key mr-2"></i> Asignatura Clave
+                                                </span>
+                                                <span>
+                                                    <i class="fas fa-star mr-2"></i> Créditos
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>                            
+                                </div>
+                                <div class="col-md-3 d-sm-flex align-items-center justify-content-end">
+                                    <a href="#" class="d-none d-sm-inline-block text-uppercase p-3 btn btn-primary">Seleccionar asignaturas</a>
+                                </div>
                             </div>
+                            <!-- selecctor -->
+                            <form class="form-inline row">
+                                <div class="form-group col-md-3 mb-2">
+                                    <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionAsignatura" placeholder="0">
+                                    <label for="seleccionAsignatura" class="text-black small">Asignaturas seleccionadas</label>
+                                </div>
+                                <div class="form-group col-md-3 mb-2">
+                                    <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionCreditos" placeholder="0">
+                                    <label for="seleccionCreditos" class="text-black small">Créditos seleccionados</label>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- AÑO 1 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- I SEMESTRE -->
-                                    <div class="semestre semestre-aprobado">
-                                        I
+                    <!-- tabla asignaturas -->
+                    <div class="container-fluid my-5">
+                        <div class="row">
+                            <div class="col-12 text-center mb-2 px-1">
+                                <div class="bg-gray-400 text-black text-uppercase py-2">
+                                    Semestres
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- AÑO 1 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- I SEMESTRE -->
+                                        <div class="semestre semestre-aprobado">
+                                            I
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Transformación Digital</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada asignatura-clave">
+                                            <span class="asignatura-titulo">Instalación y certificación de redes</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Soporte en redes de acceso y antenas</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Soporte computacional (IT essentials)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Nivelación matemática</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Habilidades básicas de comunicación</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Transformación Digital</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada asignatura-clave">
-                                        <span class="asignatura-titulo">Instalación y certificación de redes</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Soporte en redes de acceso y antenas</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Soporte computacional (IT essentials)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Nivelación matemática</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Habilidades básicas de comunicación</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- II SEMESTRE -->
+                                        <div class="semestre semestre-aprobado">
+                                            II
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Conectividad esencial</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Instalaciónes domiciliarias TELCO y WIFI</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Soporte en redes de fibra óptica</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada asignatura-clave">
+                                            <span class="asignatura-titulo">Sistema operativo Servidor</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Programación de algoritmos</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Habilidades de comunicación efectiva</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Antropología</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- II SEMESTRE -->
-                                    <div class="semestre semestre-aprobado">
-                                        II
+                            </div>
+                            <!-- AÑO 2 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- III SEMESTRE -->
+                                        <div class="semestre semestre-aprobado">
+                                            III
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Routing y switching</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Introducción a cyberseguridad</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Administración sistema operativo enterprise</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada asignatura-clave">
+                                            <span class="asignatura-titulo">Mentalidad Emprendedora</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Inglés Básico</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-aprobada">
+                                            <span class="asignatura-titulo">Ética</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Conectividad esencial</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- IV SEMESTRE -->
+                                        <div class="semestre semestre-en-curso">
+                                            IV
+                                        </div>
+                                        <div class="asignatura asignatura-en-curso">
+                                            <span class="asignatura-titulo">Redes escalables y WAN</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-en-curso">
+                                            <span class="asignatura-titulo">Soluciones inalámbricas</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-en-curso">
+                                            <span class="asignatura-titulo">Operaciones en Cyberseguridad (CCNA Cyber ops)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-en-curso asignatura-clave">
+                                            <span class="asignatura-titulo">Servicios convergentes (Voz, video y datos)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
+                                        <!-- seleccionar asignatura -->
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Inglés elemental</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <!-- -->
+                                        <div class="asignatura asignatura-en-curso">
+                                            <span class="asignatura-titulo">Curso formación cristiana</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Instalaciónes domiciliarias TELCO y WIFI</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                </div>
+                            </div>
+                            <!-- AÑO 3 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- V SEMESTRE -->
+                                        <div class="semestre semestre-disponible-inscripcion seleccion-semestre">
+                                            V
+                                        </div>
+                                        <div class="asignatura asignatura-disponible asignatura-clave seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Routing y switching cor porativo</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Seguridad en redes corporativas (CCNA Security)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Comunicaciones unificadas</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Innovación en productos y servicios</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible temporada-extraordinaria">
+                                            <span class="asignatura-titulo">Inglés intermedio</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                            <span class="asignatura-titulo">Práctica laboral</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Soporte en redes de fibra óptica</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- VI SEMESTRE -->
+                                        <div class="semestre semestre-disponible-inscripcion">
+                                            VI
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Troubleshooting</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Problemáticas globales y prototipado</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Gestión de riesgos en redes corporativas</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible asignatura-clave">
+                                            <span class="asignatura-titulo">Telepresencia y entornos innovadores de colaboración humana</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Inglés intermedio alto</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada asignatura-clave">
-                                        <span class="asignatura-titulo">Sistema operativo Servidor</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                </div>
+                            </div>
+                            <!-- AÑO 4 -->
+                            <div class="col-lg-3 col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- VII SEMESTRE -->
+                                        <div class="semestre semestre-disponible-inscripcion">
+                                            VII
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Diseño de arquitectura de red (CCDA)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible asignatura-clave">
+                                            <span class="asignatura-titulo">Control y gestión de proyectos de conectividad</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Inglés especialidad</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Programación de algoritmos</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Habilidades de comunicación efectiva</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Antropología</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
+                                    <div class="col-md-6 mb-2 px-1">
+                                        <!-- VIII SEMESTRE -->
+                                        <div class="semestre semestre-disponible-inscripcion">
+                                            VIII
+                                        </div>
+                                        <div class="asignatura asignatura-disponible asignatura-clave">
+                                            <span class="asignatura-titulo">Programación y redes virtualizadas (SDN-NFV)</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Portafolio de titulo</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
+                                        <div class="asignatura asignatura-disponible">
+                                            <span class="asignatura-titulo">Práctica profesional</span>
+                                            <span class="d-flex justify-content-between">
+                                                <span class="asignatura-codigo">EMP1100</span>
+                                                <span class="asignatura-creditos">16</span>
+                                            </span>
+                                            <!-- esto se agrega -->
+                                            <span class="asignatura-fecha">
+                                                2021 - 2
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- AÑO 2 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- III SEMESTRE -->
-                                    <div class="semestre semestre-aprobado">
-                                        III
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Routing y switching</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Introducción a cyberseguridad</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Administración sistema operativo enterprise</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada asignatura-clave">
-                                        <span class="asignatura-titulo">Mentalidad Emprendedora</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Inglés Básico</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-aprobada">
-                                        <span class="asignatura-titulo">Ética</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- IV SEMESTRE -->
-                                    <div class="semestre semestre-en-curso">
-                                        IV
-                                    </div>
-                                    <div class="asignatura asignatura-en-curso">
-                                        <span class="asignatura-titulo">Redes escalables y WAN</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-en-curso">
-                                        <span class="asignatura-titulo">Soluciones inalámbricas</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-en-curso">
-                                        <span class="asignatura-titulo">Operaciones en Cyberseguridad (CCNA Cyber ops)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-en-curso asignatura-clave">
-                                        <span class="asignatura-titulo">Servicios convergentes (Voz, video y datos)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                    <!-- seleccionar asignatura -->
-                                    <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Inglés elemental</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <!-- -->
-                                    <div class="asignatura asignatura-en-curso">
-                                        <span class="asignatura-titulo">Curso formación cristiana</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- AÑO 3 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- V SEMESTRE -->
-                                    <div class="semestre semestre-disponible-inscripcion seleccion-semestre">
-                                        V
-                                    </div>
-                                    <div class="asignatura asignatura-disponible asignatura-clave seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Routing y switching cor porativo</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Seguridad en redes corporativas (CCNA Security)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Comunicaciones unificadas</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Innovación en productos y servicios</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible temporada-extraordinaria">
-                                        <span class="asignatura-titulo">Inglés intermedio</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
-                                        <span class="asignatura-titulo">Práctica laboral</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- VI SEMESTRE -->
-                                    <div class="semestre semestre-disponible-inscripcion">
-                                        VI
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Troubleshooting</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Problemáticas globales y prototipado</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Gestión de riesgos en redes corporativas</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible asignatura-clave">
-                                        <span class="asignatura-titulo">Telepresencia y entornos innovadores de colaboración humana</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Inglés intermedio alto</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- AÑO 4 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- VII SEMESTRE -->
-                                    <div class="semestre semestre-disponible-inscripcion">
-                                        VII
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Diseño de arquitectura de red (CCDA)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible asignatura-clave">
-                                        <span class="asignatura-titulo">Control y gestión de proyectos de conectividad</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Inglés especialidad</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-2 px-1">
-                                    <!-- VIII SEMESTRE -->
-                                    <div class="semestre semestre-disponible-inscripcion">
-                                        VIII
-                                    </div>
-                                    <div class="asignatura asignatura-disponible asignatura-clave">
-                                        <span class="asignatura-titulo">Programación y redes virtualizadas (SDN-NFV)</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Portafolio de titulo</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                    <div class="asignatura asignatura-disponible">
-                                        <span class="asignatura-titulo">Práctica profesional</span>
-                                        <span class="d-flex justify-content-between">
-                                            <span class="asignatura-codigo">EMP1100</span>
-                                            <span class="asignatura-creditos">16</span>
-                                        </span>
-                                        <!-- esto se agrega -->
-                                        <span class="asignatura-fecha">
-                                            2021 - 2
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
+                    </div>
+                    <!-- /.container-fluid -->
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
@@ -839,6 +854,9 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script src="js/pinBox/jquery.pinBox.js"></script>
+    <script src="js/miramas.js"></script>
 
 </body>
 
