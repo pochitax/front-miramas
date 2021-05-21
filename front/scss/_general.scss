@@ -81,6 +81,10 @@ p {
 
 // Clases especiales
 
+.pinBox.active {
+    border-bottom: 2px solid $black;
+}
+
 /* Progreso */
 
 .datos-progreso {
@@ -89,7 +93,7 @@ p {
     line-height: 130%;
     padding: 5px;
     border-left: 4px solid $black;
-    display: inline-table;
+    //display: inline-table;
     &.aprobado {
         border-left-color: $green;
     }

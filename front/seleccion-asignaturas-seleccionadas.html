@@ -240,7 +240,7 @@
                 <div class="container mb-0">
                     <div class="row">
                         <!-- Page Heading -->
-                        <div class="col-md-10 py-4">
+                        <div class="col-lg-10 py-4">
                             <h1 class="h3 mb-0 text-black text-uppercase font-weight-bold mb-3">Tu avance curricular</h1>
                             <p>
                                 A continuación presentamos tu progresión curricular, que permite visualizar tu avance y con ello proyectar la ruta crítica para una titulación oportuna. Es importante que la revises para conocer qué asignaturas ya has aprobado, cuáles estás cursando y qué asignaturas tienes pendientes de aprobar, para así cumplir con tu plan de estudios y puedas titularte.
@@ -250,13 +250,13 @@
                 </div>
                 <!-- Fixed -->
                 <div id="asignaturasSelector">
-                    <div class="pinBox bg-white">
+                    <div class="pinBox bg-white animated--fade-in">
                         <div class="container-fluid mb-0 pt-2">
                             <div class="row mb-2">
-                                <div class="col-md-9">
+                                <div class="col-md-12 col-lg-9">
                                     <div class="row">
                                         <div class="col-3">
-                                            <div class="asignatura">
+                                            <div class="asignatura mt-2 mb-3">
                                                 <span class="asignatura-titulo lista-asignatura">Nombre Asignatura</span>
                                                 <span class="d-flex justify-content-between">
                                                     <span class="asignatura-codigo">SIGLA</span>
@@ -264,7 +264,7 @@
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="col-9 d-flex justify-content-between align-items-center">
+                                        <div class="col-9 d-md-flex justify-content-between align-items-center">
                                             <span class="datos-progreso aprobado mx-2">
                                                 Asignatura aprobada
                                             </span>
@@ -286,27 +286,28 @@
                                                 </span>
                                             </span>
                                         </div>
-                                    </div>                            
+                                    </div>  
+                                    <!-- selecctor -->
+                                    <form class="form-inline row pt-0">
+                                        <div class="form-group col-xl-3 col-lg-4 col-sm-6 mb-0 justify-content-sm-end justify-content-lg-start">
+                                            <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionAsignatura" placeholder="0">
+                                            <label for="seleccionAsignatura" class="text-black small">Asignaturas seleccionadas</label>
+                                        </div>
+                                        <div class="form-group col-xl-3 col-lg-4 col-sm-6 mb-0">
+                                            <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionCreditos" placeholder="0">
+                                            <label for="seleccionCreditos" class="text-black small">Créditos seleccionados</label>
+                                        </div>
+                                    </form>                          
                                 </div>
-                                <div class="col-md-3 d-sm-flex align-items-center justify-content-end">
+                                <div class="col-md-12 text-center mt-3 mt-lg-0 col-lg-3 d-lg-flex align-items-center justify-content-end">
                                     <a href="#" class="d-none d-sm-inline-block text-uppercase p-3 btn btn-primary">Seleccionar asignaturas</a>
                                 </div>
                             </div>
-                            <!-- selecctor -->
-                            <form class="form-inline row">
-                                <div class="form-group col-md-3 mb-2">
-                                    <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionAsignatura" placeholder="0">
-                                    <label for="seleccionAsignatura" class="text-black small">Asignaturas seleccionadas</label>
-                                </div>
-                                <div class="form-group col-md-3 mb-2">
-                                    <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionCreditos" placeholder="0">
-                                    <label for="seleccionCreditos" class="text-black small">Créditos seleccionados</label>
-                                </div>
-                            </form>
+                            
                         </div>
                     </div>
                     <!-- tabla asignaturas -->
-                    <div class="container-fluid my-5">
+                    <div class="container-fluid mt-3 mb-5">
                         <div class="row">
                             <div class="col-12 text-center mb-2 px-1">
                                 <div class="bg-gray-400 text-black text-uppercase py-2">
