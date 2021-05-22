@@ -318,110 +318,6 @@ p {
     }
 }
 
-// Responsive 
-
-/* móvil */
-
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .header-logo img {
-        width: 230px; //150px;
-    }
-}
-
-@media (max-width: 575.98px) {
-    .header-logo img {
-        width: 175px; //150px;
-    }
-    .form-control {
-        &.form-control-mini {
-            width: auto; //40px;
-        }
-    }
-    .asignatura .asignatura-creditos, .asignatura .asignatura-codigo {
-        //font-size: 10px;
-    }
-    .asignatura.lista-asignatura {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 767.98px) { 
-    h1, .h1 {
-        font-size: 2rem;
-    }
-    h2, .h2 {
-        font-size: 24px;
-    }
-    .h3, h3 {
-        font-size: 18px;
-    }
-    .h4, h4 {
-        font-size: 15px;
-    }
-    .display-4 {
-        font-size: 27px;
-    }
-    p {
-        font-size: 14px;
-    }
-    .featured-top .font-italic {
-        font-size: 18px;
-    }
-    .featured-top .btn {
-        padding: 15px;
-    }
-    /* header */
-    .header-top {
-        height: 60px;
-        .row {
-            height: 60px;
-        }
-        .col-md-6 {
-            height: 60px;
-        }
-        .btn {
-            font-size: 14px;
-        }
-    }
-    .breadcrumb .breadcrumb-item {
-        font-size: 11px;
-    }
-    #carouselSlides {
-        margin-bottom: 0;
-    }
-    .card .card-text {
-        font-size: 12px;
-        line-height: 150%;
-    }
-    .call-to-action {
-        text-align: center;
-    }
-    .call-to-action .btn {
-        padding: 15px;
-    }
-    .call-to-action h3 {
-        font-size: 30px;
-    }
-    .call-to-action p {
-        font-size: 1rem;
-    }
-    .footer .logo-footer {
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-    .footer img.acreditacion {
-        width: 100%;
-        max-width: 361px;
-        margin-left: auto;
-        margin-right: auto;
-        border-top: 1px solid $white;
-    }
-    .datos-progreso.lista-datos span {
-        min-width: auto;
-    }
-}
-
-
 .pasos {
     background-color: #212121;
     color: #fff;
@@ -606,3 +502,115 @@ p {
 .sidebar-dark .nav-item .nav-link:hover, .nav-item .active {
     color: #FFB800;
 }
+
+// Responsive 
+
+/* móvil */
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .header-logo img {
+        width: 230px; //150px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .header-logo img {
+        width: 175px; //150px;
+    }
+    .form-control {
+        &.form-control-mini {
+            width: auto; //40px;
+        }
+    }
+    .asignatura .asignatura-creditos, .asignatura .asignatura-codigo {
+        //font-size: 10px;
+    }
+    .asignatura.lista-asignatura {
+        font-size: 12px;
+    }
+    .datos-progreso.d-md-block {
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    h1, .h1 {
+        font-size: 2rem;
+    }
+    h2, .h2 {
+        font-size: 24px;
+    }
+    .h3, h3 {
+        font-size: 18px;
+    }
+    .h4, h4 {
+        font-size: 15px;
+    }
+    .display-4 {
+        font-size: 27px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .featured-top .font-italic {
+        font-size: 18px;
+    }
+    .featured-top .btn {
+        padding: 15px;
+    }
+    /* header */
+    .header-top {
+        height: 60px;
+        .row {
+            height: 60px;
+        }
+        .col-md-6 {
+            height: 60px;
+        }
+        .btn {
+            font-size: 14px;
+        }
+    }
+    .breadcrumb .breadcrumb-item {
+        font-size: 11px;
+    }
+    #carouselSlides {
+        margin-bottom: 0;
+    }
+    .card .card-text {
+        font-size: 12px;
+        line-height: 150%;
+    }
+    .call-to-action {
+        text-align: center;
+    }
+    .call-to-action .btn {
+        padding: 15px;
+    }
+    .call-to-action h3 {
+        font-size: 30px;
+    }
+    .call-to-action p {
+        font-size: 1rem;
+    }
+    .footer .logo-footer {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .footer img.acreditacion {
+        width: 100%;
+        max-width: 361px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 1px solid $white;
+    }
+    .datos-progreso.lista-datos span {
+        min-width: auto;
+    }
+    .pasos {
+        font-size: 18px;
+    }
+}
+
+
