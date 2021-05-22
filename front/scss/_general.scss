@@ -29,6 +29,11 @@ p {
     display: -ms-flexbox;
     display: flex;
 }
+.form-control {
+    &.form-control-mini {
+        width: 40px;
+    }
+}
 
 // General Content
 
@@ -76,6 +81,10 @@ p {
 
 // Clases especiales
 
+.pinBox.active {
+    border-bottom: 2px solid $black;
+}
+
 /* Progreso */
 
 .datos-progreso {
@@ -84,7 +93,7 @@ p {
     line-height: 130%;
     padding: 5px;
     border-left: 4px solid $black;
-    display: inline-table;
+    //display: inline-table;
     &.aprobado {
         border-left-color: $green;
     }
@@ -100,14 +109,14 @@ p {
     &.lista-datos {
         border-left-color: transparent;
         span {
-            display: block;
+            //display: block;
             margin: 5px 0;
             position: relative;
-            padding-left: 20px;
-            min-width: 130px;
+            padding-left: 14px;
+            min-width: 75px; //130px;
             .fas {
                 position: absolute;
-                left: 0;
+                left: -6px;
             }
         }
     }
@@ -170,6 +179,9 @@ p {
         width: 90%;
         font-weight: 400;
         line-height: 130%;
+        &.lista-asignatura {
+            margin-bottom: 10px;
+        }
     }
     .asignatura-codigo {
         font-size: 11px;
@@ -320,6 +332,17 @@ p {
     .header-logo img {
         width: 175px; //150px;
     }
+    .form-control {
+        &.form-control-mini {
+            width: auto; //40px;
+        }
+    }
+    .asignatura .asignatura-creditos, .asignatura .asignatura-codigo {
+        //font-size: 10px;
+    }
+    .asignatura.lista-asignatura {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 767.98px) { 
@@ -392,6 +415,9 @@ p {
         margin-left: auto;
         margin-right: auto;
         border-top: 1px solid $white;
+    }
+    .datos-progreso.lista-datos span {
+        min-width: auto;
     }
 }
 
