@@ -256,7 +256,7 @@
                                 <div class="col-md-12 col-lg-9">
                                     <div class="row">
                                         <div class="col-3">
-                                            <div class="asignatura mt-2 mb-3">
+                                            <div class="asignatura mt-0 mt-md-2 mb-3">
                                                 <span class="asignatura-titulo lista-asignatura">Nombre Asignatura</span>
                                                 <span class="d-flex justify-content-between">
                                                     <span class="asignatura-codigo">SIGLA</span>
@@ -265,23 +265,24 @@
                                             </div>
                                         </div>
                                         <div class="col-9 d-md-flex justify-content-between align-items-center">
-                                            <span class="datos-progreso aprobado mx-2">
-                                                Asignatura aprobada
+                                            <span class="datos-progreso d-md-block aprobado mx-md-2">
+                                                <span class="d-none d-md-inline">Asignatura aprobada</span><span class="d-inline d-md-none">Aprobada</span>
                                             </span>
-                                            <span class="datos-progreso en-curso mx-2">
-                                                Asignatura en curso
+                                            <span class="datos-progreso d-md-block en-curso mx-md-2">
+                                                <span class="d-none d-md-inline">Asignatura en curso</span><span class="d-inline d-md-none">En curso</span>
                                             </span>
-                                            <span class="datos-progreso disponible seleccion mx-2">
-                                                Disponible para inscripción
+                                            <span class="datos-progreso d-md-block disponible seleccion mx-md-2">
+                                                <span class="d-none d-md-inline">Disponible para inscripción</span><span class="d-inline d-md-none">Disponible</span>
                                             </span>
-                                            <span class="datos-progreso temporada-extraordinaria mx-2">
-                                                Asignatura Temporada extraordinaria
+                                            <span class="datos-progreso d-md-block temporada-extraordinaria mx-md-2">
+                                                <span class="d-none d-md-inline">Asignatura Temporada extraordinaria</span><span class="d-inline d-md-none">Extra</span>
                                             </span>
-                                            <span class="datos-progreso lista-datos mx-2">
-                                                <span>
+                                            <span class="datos-progreso lista-datos mx-md-2">
+                                                <hr class="d-block d-md-none mt-3 mb-2">
+                                                <span class="d-inline-block d-md-block">
                                                     <i class="fas fa-key mr-2"></i> Asignatura Clave
                                                 </span>
-                                                <span>
+                                                <span class="d-inline-block d-md-block">
                                                     <i class="fas fa-star mr-2"></i> Créditos
                                                 </span>
                                             </span>
@@ -289,18 +290,18 @@
                                     </div>  
                                     <!-- selecctor -->
                                     <form class="form-inline row pt-0">
-                                        <div class="form-group col-xl-3 col-lg-4 col-sm-6 mb-0 justify-content-sm-end justify-content-lg-start">
+                                        <div class="form-group col-xl-3 col-lg-4 col-6 mb-0 justify-content-center justify-content-sm-end justify-content-lg-start">
                                             <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionAsignatura" placeholder="0">
-                                            <label for="seleccionAsignatura" class="text-black small">Asignaturas seleccionadas</label>
+                                            <label for="seleccionAsignatura" class="text-black small"><span class="d-none d-md-inline">Asignaturas seleccionadas</span><span class="d-inline d-md-none">Seleccionadas</span></label>
                                         </div>
-                                        <div class="form-group col-xl-3 col-lg-4 col-sm-6 mb-0">
+                                        <div class="form-group col-xl-3 col-lg-4 col-6 mb-0 justify-content-center justify-content-sm-start">
                                             <input type="text" class="form-control form-control-mini text-center text-black mr-2" id="seleccionCreditos" placeholder="0">
-                                            <label for="seleccionCreditos" class="text-black small">Créditos seleccionados</label>
+                                            <label for="seleccionCreditos" class="text-black small"><span class="d-none d-md-inline">Créditos seleccionados</span><span class="d-inline d-md-none">Créditos</span></label>
                                         </div>
                                     </form>                          
                                 </div>
-                                <div class="col-md-12 text-center mt-3 mt-lg-0 col-lg-3 d-lg-flex align-items-center justify-content-end">
-                                    <a href="#" class="d-none d-sm-inline-block text-uppercase p-3 btn btn-primary">Seleccionar asignaturas</a>
+                                <div class="col-md-12 text-center mt-3 mt-lg-0 col-lg-3 d-grid gap-2 d-lg-flex align-items-center justify-content-end">
+                                    <a href="#" class="d-inline-block text-uppercase p-3 btn btn-primary">Seleccionar asignaturas</a>
                                 </div>
                             </div>
                             

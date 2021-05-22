@@ -109,14 +109,14 @@ p {
     &.lista-datos {
         border-left-color: transparent;
         span {
-            display: block;
+            //display: block;
             margin: 5px 0;
             position: relative;
-            padding-left: 20px;
+            padding-left: 14px;
             min-width: 130px;
             .fas {
                 position: absolute;
-                left: 0;
+                left: -6px;
             }
         }
     }
@@ -331,6 +331,11 @@ p {
 @media (max-width: 575.98px) {
     .header-logo img {
         width: 175px; //150px;
+    }
+    .form-control {
+        &.form-control-mini {
+            width: auto; //40px;
+        }
     }
 }
 
