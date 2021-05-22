@@ -113,7 +113,7 @@ p {
             margin: 5px 0;
             position: relative;
             padding-left: 14px;
-            min-width: 130px;
+            min-width: 75px; //130px;
             .fas {
                 position: absolute;
                 left: -6px;
@@ -337,6 +337,12 @@ p {
             width: auto; //40px;
         }
     }
+    .asignatura .asignatura-creditos, .asignatura .asignatura-codigo {
+        //font-size: 10px;
+    }
+    .asignatura.lista-asignatura {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 767.98px) { 
@@ -409,5 +415,8 @@ p {
         margin-left: auto;
         margin-right: auto;
         border-top: 1px solid $white;
+    }
+    .datos-progreso.lista-datos span {
+        min-width: auto;
     }
 }
