@@ -606,3 +606,37 @@ p {
 .sidebar-dark .nav-item .nav-link:hover, .nav-item .active {
     color: #FFB800;
 }
+
+.btn-duoc{
+    padding: 16px 36px;
+    color: #000;
+    border: 2px solid #000;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background: #FFB800;
+    border-radius: 0;
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.btn-duoc:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #000;
+        transition: all .35s;
+}
+
+.btn-duoc:hover{
+    color: #fff;
+  }
+  
+.btn-duoc:hover:after{
+    width: 100%;
+  }
