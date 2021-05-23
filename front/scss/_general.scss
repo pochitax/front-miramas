@@ -188,6 +188,14 @@ p {
         border-left-color: $red;
     }
 }
+.dato-final {
+    border: 1px solid $black;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 2rem;
+}
 
 /* Encabezados Semestres */
 
