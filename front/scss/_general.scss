@@ -575,6 +575,44 @@ p {
 .sidebar-dark .nav-item .nav-link:hover, .nav-item .active {
     color: #FFB800;
 }
+
+// Animación botón
+
+.btn-duoc{
+    padding: 16px 36px;
+    color: #000;
+    border: 2px solid #000;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    background: #FFB800;
+    border-radius: 0;
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+.btn-duoc:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    transition: all .35s;
+    z-index: 0;
+}
+.btn-duoc:hover{
+    color: #fff;
+    background: transparent;
+}
+.btn-duoc:hover:after{
+    width: 100%;
+} 
+
+// horarios
+
 .horario-total {
     position: relative;
     &::before {
@@ -609,8 +647,29 @@ p {
     font-family: $font-family-serif;
     font-size: 14px;
 }
+.nav-item.dropdown.no-arrow {
+    &:hover {
+        .fas {
+            color: $yellow;
+        }
+    }
+}
 
 // Responsive 
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+    .header-logo img {
+        width: 250px; //150px;
+    }
+    .nav-item.dropdown.no-arrow {
+        .fas {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+    }
+}
 
 /* móvil */
 
@@ -745,6 +804,11 @@ p {
     }
     .topbar {
         height: 60px;
+    }
+    .nav-item.dropdown.no-arrow {
+        .fas {
+            font-size: 24px;
+        }
     }
 }
 
