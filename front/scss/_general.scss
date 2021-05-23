@@ -601,9 +601,14 @@ p {
     .asignatura.lista-asignatura {
         font-size: 12px;
     }
-    .datos-progreso.d-md-block {
+    .datos-progreso.d-md-block, .data-finalizar.d-inline {
         width: 45%;
         display: inline-block;
+    }
+    .data-finalizar.d-inline {
+        width: 40%;
+        display: inline-block !important;
+        margin: 5px 0;
     }
 }
 
