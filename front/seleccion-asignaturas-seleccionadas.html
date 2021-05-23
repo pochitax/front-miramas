@@ -290,16 +290,18 @@
                                     </div>  
                                     <div class="row py-2 mb-0">
                                         <div class="col-4 col-sm-8 my-1 my-lg-0 justify-content-center justify-content-sm-end justify-content-lg-start">
-                                            <div class="text-black small d-inline mr-2"><span class="font-weight-bold mr-2 h4">10</span><span class="d-none d-md-inline">Asignaturas seleccionadas</span><span class="d-inline d-md-none">Selección</span></div>
+                                            <div class="text-black small d-inline mr-2"><span class="font-weight-bold mr-2 h4">3</span><span class="d-none d-md-inline">Asignaturas seleccionadas</span><span class="d-inline d-md-none">Selección</span></div>
                                             <div class="text-black small d-inline"><span class="font-weight-bold mr-2 h4">10</span><span class="d-none d-md-inline">Créditos seleccionados</span><span class="d-inline d-md-none">Créditos</span></div>
                                         </div>
                                         <div class="col-8 col-sm-4 d-flex d-lg-none justify-content-end align-items-center">
-                                            <a href="#" class="d-inline-block w-100 w-sm-auto text-uppercase btn btn-primary">Pre-inscribir</a>
+                                            <!-- SOLO AGREGUÉ EL DATA-TOGGLE Y DATA-TARGET MODAL PARA QUE SE VIESE EL MODAL ANTES DE SELECCIONAR LO QUE CORRESPONDE-->
+                                            <a href="#" class="d-inline-block w-100 w-sm-auto text-uppercase btn btn-primary" data-toggle="modal" data-target="#confirmarModal">Pre-inscribir</a>
                                         </div>
                                     </div>                      
                                 </div>
                                 <div class="col-md-12 text-center mb-2 mt-2 mt-lg-0 col-lg-3 d-none d-lg-flex align-items-center justify-content-end">
-                                    <a href="#" class="d-inline-block text-uppercase p-3 btn btn-primary">Pre-inscribir</a>
+                                    <!-- SOLO AGREGUÉ EL DATA-TOGGLE Y DATA-TARGET MODAL PARA QUE SE VIESE EL MODAL ANTES DE SELECCIONAR LO QUE CORRESPONDE-->
+                                    <a href="#" class="d-inline-block text-uppercase p-3 btn btn-primary" data-toggle="modal" data-target="#confirmarModal">Pre-inscribir asignaturas</a>
                                 </div>
                             </div>
                             
@@ -508,7 +510,7 @@
                                             </span>
                                         </div>
                                         <!-- seleccionar asignatura -->
-                                        <div class="asignatura asignatura-disponible seleccionar-asignatura seleccionada">
+                                        <div class="asignatura asignatura-disponible seleccionar-asignatura">
                                             <span class="asignatura-titulo">Inglés elemental</span>
                                             <span class="d-flex justify-content-between">
                                                 <span class="asignatura-codigo">EMP1100</span>
@@ -820,19 +822,25 @@
     </a>
 
     <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+    <div class="modal fade" id="confirmarModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <div class="modal-header px-5 pt-5">
+                    <h5 class="modal-title" id="modalTitle">¡Ten presente!</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                <div id="modalMessage" class="modal-body px-5">
+                    <p>Para tu titulación oportuna no olvides pre-inscribir la asignatura de:</p>
+                    <ul>
+                        <li>
+                            <a href="#"><strong>Inglés Elemental</strong> [INI3101]</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer px-5 pb-5">
+                    <button class="btn btn-outline-black p-3" type="button" data-dismiss="modal">Lo tengo presente</button>
                 </div>
             </div>
         </div>
@@ -857,6 +865,12 @@
 
     <script src="js/pinBox/jquery.pinBox.js"></script>
     <script src="js/miramas.js"></script>
+
+    <script>
+
+        
+
+    </script>
 
 </body>
 

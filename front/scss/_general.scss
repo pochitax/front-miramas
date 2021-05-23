@@ -10,10 +10,21 @@
     color: $black;
 }
 .btn {
+    border-radius: 0;
     &.btn-primary {
         color: $black;
         border-radius: 0;
-        border: 1px solid $black;
+        border: 2px solid $black;
+    }
+    &.btn-outline-black {
+        background-color: transparent;
+        border: 2px solid $black;
+        //text-transform: uppercase;
+        color: $black;
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
     }
 }
 p {
@@ -77,6 +88,59 @@ p {
             color: $primary;
         }
     }
+}
+
+// Modales
+
+.modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: #EEEEEE;
+    position: relative;
+    .btn.btn-outline-black {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        color: $white;
+        background-color: $black;
+        border-radius: 30px;
+        opacity: 1;
+        border: 2px solid $white;
+        &:hover {
+            background-color: $yellow;
+            color: $black;
+            border-color: $black;
+            opacity: 1;
+        }
+    }
+}
+.modal-title {
+    color: $black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.modal-body {
+    padding-top: 3px;
+    a {
+        color: $black;
+    }
+}
+.modal-footer {
+    border-top: 0;
+    padding-top: 0;
 }
 
 // Clases especiales
