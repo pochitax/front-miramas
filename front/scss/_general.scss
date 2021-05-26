@@ -311,6 +311,34 @@ p {
             color: $yellow;
         }
     }
+    &.seleccionada {
+        position: relative;
+        &::before {
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            font-family: "Font Awesome 5 Free";
+            content: "\f00c"; 
+            font-weight: 900;
+            color: $yellow;
+            width: 22px;
+            height: 22px;
+            background-color: $white;
+            border: 3px solid $yellow;
+            border-radius: 20px;
+            z-index: 1;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .asignatura-fecha {
+        display: block;
+        color: $black;
+        font-size: 12px;
+        padding: 3px 8px 0 8px;
+        margin: 5px -8px -5px -8px;
+        background-color: $yellow;
+    }
 }
 .asignatura-disponible {
     background-color: #d9d9d9;
